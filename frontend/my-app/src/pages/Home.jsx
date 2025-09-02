@@ -18,6 +18,22 @@ const Home = () => {
     <Team/>
     <Reservation/>
     <Footer/>
+    <div style={{ textAlign: "center", margin: "2rem 0" }}>
+      <button
+        style={{
+          padding: "1rem 2rem",
+          fontSize: "1.2rem",
+          background: "#ff914d",
+          color: "white",
+          border: "none",
+          borderRadius: "8px",
+          cursor: "pointer"
+        }}
+        onClick={() => window.location.href = "/search-restaurants"}
+      >
+        Reserve
+      </button>
+    </div>
     </>
       
   )

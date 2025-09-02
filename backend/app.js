@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import { errorMiddleware } from "./error/error.js";
 import reservationRouter from "./routes/reservationRoute.js";
+import restaurantRoute from "./routes/restaurantRoute.js";
 import { dbConnection } from "./database/dbConnection.js";
 
 const app = express();
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/v1/reservation", reservationRouter);
+app.use("/api/v1/restaurants", restaurantRoute);
 app.get("/", (req, res, next)=>{return res.status(200).json({
   success: true,
   message: "HELLO WORLD AGAIN"
