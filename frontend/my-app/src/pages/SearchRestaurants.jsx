@@ -30,6 +30,8 @@ const SearchRestaurants = () => {
     fetchRestaurants();
   }, [query, cuisine]);
 
+  
+
   return (
     <section className="search-restaurants" style={{ minHeight: "80vh", background: "#fff7f0", padding: "3rem 0" }}>
       <div className="container" style={{ maxWidth: 700, margin: "0 auto", background: "#fff", borderRadius: 16, boxShadow: "0 4px 24px rgba(0,0,0,0.08)", padding: "2.5rem 2rem" }}>
@@ -124,7 +126,8 @@ const SearchRestaurants = () => {
                           <strong>Image:</strong> <img src={r.image} alt={r.name} style={{ width: 120, height: 120, objectFit: "cover", borderRadius: 12, marginLeft: 10, verticalAlign: "middle" }} />
                         </div>
                         {/* Add more details here if available */}
-                        <button
+                        {/* Reserve removed for single-restaurant site */}
+                        {/* <button
                           style={{
                             marginTop: 18,
                             padding: "0.8rem 2rem",
@@ -136,13 +139,10 @@ const SearchRestaurants = () => {
                             cursor: "pointer",
                             fontWeight: 600
                           }}
-                          onClick={e => {
-                            e.stopPropagation();
-                            toast.success(`Reservation for ${r.name} coming soon!`);
-                          }}
+                          onClick={e => { e.stopPropagation(); }}
                         >
                           Reserve
-                        </button>
+                        </button> */}
                       </div>
                     )}
                   </li>

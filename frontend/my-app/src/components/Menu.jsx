@@ -20,6 +20,22 @@ const Menu = () => {
                     ))
                 }   
             </div>
+            <div style={{ textAlign: "center", marginTop: 24 }}>
+              <button
+                onClick={() => window.location.href = "/order-now"}
+                style={{
+                  padding: "0.9rem 1.6rem",
+                  background: "#ff914d",
+                  color: "#fff",
+                  border: "none",
+                  borderRadius: 8,
+                  cursor: "pointer",
+                  fontWeight: 700
+                }}
+              >
+                Order Now
+              </button>
+            </div>
         </div>
       </section>
     </>
