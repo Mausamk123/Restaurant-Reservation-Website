@@ -11,7 +11,7 @@ import Signup from "./pages/Signup.jsx";
 
 
 const App = () => {
-  return <Router>
+   return <Router>
       <Toaster position="top-right" />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +23,9 @@ const App = () => {
   <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
-  
+    
+
+    
 }
 
 export default App
