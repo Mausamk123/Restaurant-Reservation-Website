@@ -71,7 +71,7 @@ const Login = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "https://happy-restaurant.onrender.com/api/v1/auth/login",
+        "https://happy-frontend.onrender.com//api/v1/auth/login",
         form
       );
       localStorage.setItem("token", data.token);
