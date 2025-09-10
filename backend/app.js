@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import { errorMiddleware } from "./error/error.js";
-import reservationRouter from "./routes/reservationRoute.js";
+import reservationRouter from "./routes/reservationroute.js";
 import restaurantRoute from "./routes/restaurantRoute.js";
 import authRoute from "./routes/authRoute.js";
 import foodItemRoute from "./routes/foodItemRoute.js";
