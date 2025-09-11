@@ -20,7 +20,7 @@ const SearchRestaurants = () => {
         const params = {};
         if (query) params.search = query;
         if (cuisine && cuisine !== "All") params.cuisine = cuisine;
-        const { data } = await axios.get("https://happy-frontend.onrender.com//api/v1/restaurants", { params });
+        const { data } = await axios.get("http://localhost:4000//api/v1/restaurants", { params });
         setRestaurants(data.restaurants);
       } catch (err) {
         setRestaurants([]);

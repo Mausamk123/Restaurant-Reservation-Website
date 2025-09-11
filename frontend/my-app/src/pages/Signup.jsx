@@ -15,7 +15,7 @@ const Signup = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const { data } = await axios.post("https://happy-frontend.onrender.com//api/v1/auth/signup", form);
+      const { data } = await axios.post("http://localhost:4000/api/v1/auth/signup", form);
       localStorage.setItem("token", data.token);
       localStorage.setItem("user", JSON.stringify(data.user));
       toast.success("Signup successful!");

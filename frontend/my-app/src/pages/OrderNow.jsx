@@ -93,7 +93,7 @@ const OrderNow = () => {
       try {
         setLoading(true);
         // Replace with your API
-        const res = await axios.get("https://happy-frontend.onrender.com/api/v1/food-items");
+        const res = await axios.get("http://localhost:4000/api/v1/food-items");
         setItems(res.data.items || []);
       } catch (err) {
         toast.error("Failed to fetch items");
